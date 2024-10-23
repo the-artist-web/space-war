@@ -10,4 +10,4 @@
 </p>
 
 <h2>Demo Shots:</h2>
-<img src="">
+<img src="./design/design-ui.png">
