@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- favicon -->
+        <link rel="icon" href="./src/assets/image/favicon.png" />
+        <!-- meta tags -->
+        <title>Space War</title>
+        <meta name="title" content="Space War" />
+        <meta name="description" content="This site is inspired by the movie Space Wars." />
+        <meta name="keywords" content="Html, Css, Bootstrap, Java Script" />
+        <meta name="author" content="The Artist Web" />
+        <!-- google font link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" 
+        rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" 
+        rel="stylesheet" />
+        <!-- custom cdnjs link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- custom bootstrap min css link -->
+        <link rel="stylesheet" href="./src/assets/css/bootstrap.min.css" />
+        <!-- custom aos link -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <!-- custom css link -->
+        <link rel="stylesheet" href="./src/assets/css/SpaceWar.css" />
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar position-fixed top-0 left-0 right-0 z-3 w-100 py-0" data-navbar>
+            <div class="container d-flex align-items-center justify-content-between">
+                <a href="index.html" class="logo">
+                    <img
+                        src="./src/assets/image/logo.png"
+                        alt="Space War"
+                        loading="lazy"
+                        class="img-cover"
+                        style="width: 35px;"
+                        data-aos="fade-right"
+                        data-aos-duration="1400"
+                    />
+                </a>
+                
+                <ul class="d-none d-md-flex align-items-center gap-5 p-0 m-0">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link text-capitalize">home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link text-capitalize">about</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#shop" class="nav-link text-capitalize">shop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#exhibitions" class="nav-link text-capitalize">exhibitions</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link text-capitalize">contact</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center" style="gap: 15px;">
+                    <button 
+                        type="button" 
+                        class="btn main-btn rounded-3 text-uppercase"
+                    >
+                        say hello
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn icon-nav fs-1 d-md-none"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasOpenAside"
+                        data-aos="fade-left"
+                        data-aos-duration="1400"
+                    >
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ASIDE -->
+        <aside class="aside offcanvas offcanvas-end w-100 h-100" data-bs-scroll="true" id="offcanvasOpenAside">
+            <button
+                type="button"
+                class="btn-close-aside fs-1 position-absolute top-0 end-0 p-4"
+                data-bs-dismiss="offcanvas"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <ul class="d-flex flex-column gap-4">
+                <li class="nav-item">
+                    <a href="#home" class="aside-link text-capitalize fs-2 fw-600" style="letter-spacing: 0.8px;">home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#about" class="aside-link text-capitalize fs-2 fw-600" style="letter-spacing: 0.8px;">about</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#shop" class="aside-link text-capitalize fs-2 fw-600" style="letter-spacing: 0.8px;">shop</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#exhibitions" class="aside-link text-capitalize fs-2 fw-600" style="letter-spacing: 0.8px;">exhibitions</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#contact" class="aside-link text-capitalize fs-2 fw-600" style="letter-spacing: 0.8px;">contact</a>
+                </li>
+            </ul>
+        </aside>
+
+        <main>
+            <article>
+                <!-- HERO -->
+                <section class="hero d-md-flex align-items-center justify-content-center section" id="home">
+                    <div class="container mx-auto px-3 row gx-0 gx-lg-auto align-items-center gap-4 position-relative gap-lg-0">
+                        <div class="d-none flex-column align-self-center gap-3 d-lg-flex col-lg-1" data-aos="fade-right" data-aos-duration="1400">
+                            <a href="#" class="btn btn-social text-start label-medium">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a href="#" class="btn btn-social text-start label-medium">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="#" class="btn btn-social text-start label-medium">
+                                <i class="fa-brands fa-dribbble"></i>
+                            </a>
+                        </div>
+
+                        <div class="body-hero col-12 col-lg-6" data-aos="fade-up" data-aos-duration="1400">
+                            <p class="text-top text-capitalize label-small">carving art</p>
+                            <h1 class="text-title text-capitalize display-large">bringing <br /> wood to live</h1>
+                            <p class="text-hero m-0 label-small">Expertly carved wooden sculptures and figurines that showcase the natural beauty and versatility of wood</p>
+                        </div>
+
+                        <figure class="col-12 col-lg-5" data-aos="zoom-in" data-aos-duration="1400">
+                            <img
+                                src="./src/assets/image/hero.png"
+                                alt="hero"
+                                loading="lazy"
+                                class="img-cover"
+                            />
+                        </figure>
+
+                        <a 
+                            href="#about" 
+                            class="btn btn-arrow d-none position-absolute bottom-0 w-auto rounded-pill d-lg-flex align-items-center justify-content-center label-large" 
+                            style="right: 300px;"
+                            data-aos="fade-left"
+                            data-aos-duration="600"
+                        >
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- ABOUT -->
+                <section class="about section" id="about">
+                    <div class="container mx-auto px-3 gx-0 gx-lg-auto row row-cols-1 row-cols-lg-2 align-items-center gap-3 gap-lg-0" style="max-width: 1200px;">
+                        <figure class="col" data-aos="zoom-in" data-aos-duration="1400">
+                            <img 
+                                src="./src/assets/image/about.png"
+                                alt="about"
+                                loading="lazy"
+                                class="img-cover"
+                                style="max-width: 600px;"
+                            />
+                        </figure>
+
+                        <div class="about-body col" data-aos="fade-up" data-aos-duration="1400">
+                            <h1 class="text-title display-medium">Wood is my <br /> Passion</h1>
+                            <p class="text-about label-small p-0 mb-5">
+                                fi, I'm Jack, a wood carving artist with 20 years of experience in creating unique, handcrafted wooden masterpieces that tell a story. My skills in carving, design, and finishing have been honed over the years, allowing me to create stunning sculptures, figurines, furniture, and decorations.
+                            </p>
+
+                            <button type="button" class="btn other-btn">
+                                VIEW MY WORK
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SHOP -->
+                <section class="shop section" id="shop">
+                    <div class="container-sm mx-auto px-3" style="max-width: 1200px;">
+                        <div 
+                            class="d-flex flex-column gap-4 flex-md-row align-items-md-center justify-content-between" 
+                            style="margin-bottom: 70px;"
+                            data-aos="fade-up" 
+                            data-aos-duration="1400"
+                        >
+                            <h2 class="display-small">Best Selling</h2>
+                            <p class="m-0 label-large">Offer up to 50%</p>
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                            <div class="col">
+                                <div class="card h-100 rounded-3" data-aos="fade-up" data-aos-duration="1400">
+                                    <img 
+                                        src="./src/assets/image/s1.png" 
+                                        alt="shop-1"
+                                        loading="lazy"
+                                        class="img-cover mx-auto mb-3"
+                                    />
+
+                                    <div class="card-body text-center p-0">
+                                        <h1 class="title-body h2 mb-3">Figurines</h1>
+                                        <p class="text-card label-small">View Gatary</p>
+                                    </div>
+
+                                    <button type="button" class="btn icon-shop label-small position-absolute top-0 end-0 z-1">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 rounded-3" data-aos="fade-up" data-aos-duration="1400">
+                                    <img 
+                                        src="./src/assets/image/s2.png" 
+                                        alt="shop-2"
+                                        loading="lazy"
+                                        class="img-cover mx-auto mb-3"
+                                    />
+                                    
+                                    <div class="card-body text-center p-0">
+                                        <h1 class="title-body h2 mb-3">Figurines</h1>
+                                        <p class="text-card label-small">View Gatary</p>
+                                    </div>
+
+                                    <button type="button" class="btn icon-shop label-small position-absolute top-0 end-0 z-1">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 rounded-3" data-aos="fade-up" data-aos-duration="1400">
+                                    <img 
+                                        src="./src/assets/image/s1.png" 
+                                        alt="shop-1"
+                                        loading="lazy"
+                                        class="img-cover mx-auto mb-3"
+                                    />
+                                    
+                                    <div class="card-body text-center p-0">
+                                        <h1 class="title-body h2 mb-3">Figurines</h1>
+                                        <p class="text-card label-small">View Gatary</p>
+                                    </div>
+
+                                    <button type="button" class="btn icon-shop label-small position-absolute top-0 end-0 z-1">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- EXHIBITIONS -->
+                <section class="exhibitions section" id="exhibitions">
+                    <div class="container mx-auto px-3" style="max-width: 1200px;">
+                        <div 
+                            class="d-flex flex-column gap-4 flex-md-row align-items-md-center justify-content-between" 
+                            style="margin-bottom: 70px;"
+                            data-aos="fade-up" 
+                            data-aos-duration="1400"
+                        >
+                            <h2 class="display-small">Exhibitions</h2>
+                            <p class="m-0 label-large">& Events</p>
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-lg-2 g-4 align-items-center">
+                            <figure class="col">
+                                <img 
+                                    src="./src/assets/image/exb.png" 
+                                    alt="exhibitions"
+                                    loading="lazy"
+                                    class="img-cover rounded-3"
+                                    style="max-width: 530px;"
+                                    data-aos="zoom-in" 
+                                    data-aos-duration="1400"
+                                />
+                            </figure>
+    
+                            <div class="exhibitions-body col" data-aos-duration="1400" data-aos="fade-up">
+                                <div class="d-grid gap-2">
+                                    <h2 class="title-exhibitions headline-small">Whispers in Wood: An Exploration of Nature's Beauty</h2>
+                                    <p class="text-exhibitions lebel-smal">22 March 2024-25 March 2024</p>
+                                </div>
+
+                                <div class="d-grid gap-2 border-exhibitions-top">
+                                    <h2 class="title-exhibitions headline-small">Tales in Timber: Mythology and Folklore in Woodcarving</h2>
+                                    <p class="text-exhibitions lebel-smal">22 March 2024-25 March 2024</p>
+                                </div>
+
+                                <div class="d-grid gap-2 border-exhibitions-top">
+                                    <h2 class="title-exhibitions headline-small">The Art of Carving: From Tradition to Modernity</h2>
+                                    <p class="text-exhibitions lebel-smal">22 March 2024-25 March 2024</p>
+                                </div>
+
+                                <div class="d-grid gap-2 border-exhibitions-top">
+                                    <h2 class="title-exhibitions headline-small">The Art of Carving: From Tradition to Modernity</h2>
+                                    <p class="text-exhibitions lebel-smal">22 March 2024-25 March 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CONTACT -->
+                <section class="contant section" id="contact" data-aos="zoom-in-up" data-aos-duration="1400">
+                    <div class="container mx-auto px-3" style="max-width: 1200px;">
+                        <h1 class="text-center mb-5 display-medium">Let's Talk</h1>
+                        <div 
+                            class="mx-auto" 
+                            style="max-width: 280px; height: 2px; background-color: var(--main-color);"
+                            data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000"
+                        ></div>
+
+                        <p class="text-center my-5">8500 Lorem Street, Chicago, IL 55030</p>
+
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mx-auto" style="max-width: 700px;">
+                            <div class="col">
+                                <button type="button" class="btn btn-contact">FACEBOOK</button>
+                            </div>
+
+                            <div class="col">
+                                <button type="button" class="btn btn-contact">INSTAGRAM</button>
+                            </div>
+
+                            <div class="col">
+                                <button type="button" class="btn btn-contact">DRIBBBLE</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container mx-auto px-3 d-flex align-items-center justify-content-between">
+                <p class="label-small">Copyright (c) 2024 the artist web</p>
+
+                <a 
+                    href="#home" 
+                    class="btn btn-arrow d-none w-auto rounded-pill d-lg-flex align-items-center justify-content-center label-large" 
+                    style="right: 300px;"
+                    data-aos="fade-left"
+                    data-aos-duration="600"
+                >
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </footer>
+
+        <!-- custom js link -->
+        <script src="./src/Script.js"></script>
+        <!-- custom bootstrap bundle min link -->
+        <script src="./src/bootstrap.bundle.min.js"></script>
+        <!-- custom aos link -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- Initialize AOS -->
+        <script>
+            AOS.init({
+                offset:1,
+            });
+        </script>
+    </body>
+</html>

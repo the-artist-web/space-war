@@ -1,0 +1,474 @@
+/* ------------------------------------------------------------- *\
+ * STYLE GUID
+\* ------------------------------------------------------------- */
+
+:root {
+    /**
+     * Colors
+     */
+    --bg-color: #160d07;
+    --text-color: #fffdee;
+    --second-color: #ffffff4f;
+    --main-color: #ffa86a;
+    --other-color: #d6d4c8;
+
+    /**
+     * Typography
+     */
+
+    /* Font size */
+    --fs-base: 62.5%;
+    --fs-display-large: 2.8rem;
+    --fs-display-medium: 3.2rem;
+    --fs-display-small: 2.6rem;
+    --fs-headline-small: 2.1rem;
+    --fs-title-medium: 1.6rem;
+    --fs-title-small: 1.4rem;
+    --fs-body-large: 1.6rem;
+    --fs-body-medium: 1.4rem;
+    --fs-label-large: 1.4rem;
+    --fs-label-medium: 1.2rem;
+    --fs-label-small: 1.1rem;
+
+    /* Font weight */
+    --weight-regular: 400;
+    --weight-medium: 500;
+
+    /** 
+     * Border Radius 
+     */
+    --radius-4: 4px;
+    --radius-8: 8px;
+    --radius-circle: 50%;
+    --radius-pill: 500px;
+
+    /**
+     * Fonts
+     */
+    --font-family-primary: "Playwrite GB S", cursive;
+    --font-family-secondary: "Inter", sans-serif;
+}
+
+/* ------------------------------------------------------------- *\
+ * RESET
+\* ------------------------------------------------------------- */
+
+li {
+    list-style: none;
+}
+
+a,
+img,
+span,
+button {
+    display: block;
+}
+
+a {
+    font-family: var(--font-family-secondary);
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+button {
+    font-family: var(--font-family-secondary);
+    color: var(--text-color);
+    background: none;
+    border: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family-secondary);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-weight: normal;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------------------------------------------------------------- *\
+ * DUBLICATE ITEMS
+\* ------------------------------------------------------------- */
+
+.section {
+    padding: 90px 0 80px;
+}
+
+.img-cover {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* ------------------------------------------------------------- *\
+ * TYPOGRAPHY
+\* ------------------------------------------------------------- */
+
+.display-large {
+    font-family: var(--font-family-primary);
+    font-size: var(--fs-display-large);
+    font-weight: var(--weight-medium);
+    line-height: 5rem;
+}
+
+.display-medium {
+    font-family: var(--font-family-primary);
+    font-size: var(--fs-display-medium);
+    font-weight: var(--weight-medium);
+    line-height: 4rem;
+}
+
+.display-small {
+    font-family: var(--font-family-primary);
+    font-size: var(--fs-display-small);
+    font-weight: var(--weight-regular);
+    line-height: 4rem;
+}
+
+.headline-small {
+    font-family: var(--font-family-primary);
+    font-size: var(--fs-headline-small);
+    font-weight: var(--weight-regular);
+    line-height: 2.8rem;
+}
+
+.title-medium {
+    font-size: var(--fs-title-medium);
+    font-weight: var(--weight-medium);
+    line-height: 1.8rem;
+}
+
+.title-small {
+    font-size: var(--fs-title-small);
+    font-weight: var(--weight-regular);
+    line-height: 1.8rem;
+}
+
+.body-large {
+    font-size: var(--fs-body-large);
+    font-weight: var(--weight-medium);
+    line-height: 1.8rem;
+}
+
+.body-medium {
+    font-size: var(--fs-body-medium);
+    font-weight: var(--weight-medium);
+    line-height: 1.8rem;
+}
+
+.label-large {
+    font-size: var(--fs-label-large);
+    font-weight: var(--weight-medium);
+    line-height: 1.8rem;
+}
+
+.label-medium {
+    font-size: var(--fs-label-medium);
+    font-weight: var(--weight-medium);
+    line-height: 1.8rem;
+}
+
+.label-small {
+    font-size: var(--fs-label-small);
+    font-weight: var(--weight-regular);
+    line-height: 1.8rem;
+}
+
+/* ------------------------------------------------------------- *\
+ * COMPONENTS
+\* ------------------------------------------------------------- */
+
+/**
+ * main btn
+ */
+.main-btn {
+    border: 2px solid var(--second-color);
+    background-color: transparent;
+    color: var(--text-color);
+    padding: 8px 22px;
+    transition: 0.4s;
+}
+
+.main-btn:hover,
+.main-btn:active {
+    border: 2px solid var(--main-color) !important;
+    background-color: var(--main-color) !important;
+    color: var(--bg-color) !important;
+    transform: scale(1.1) translateY(-5px) !important;
+    transition: 0.4s !important;
+}
+
+/**
+ * other btn
+ */
+.other-btn {
+    border: 2px solid transparent;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    padding: 8px 22px;
+    transition: 0.4s;
+}
+
+.other-btn:hover,
+.other-btn:active {
+    border: 2px solid var(--main-color) !important;
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+    transform: scale(1.1) translateY(-5px) !important;
+    letter-spacing: 3px;
+    transition: 0.4s !important;
+}
+
+/**
+ * icons nav
+ */
+.icon-nav {
+    border: none !important;
+    color: var(--text-color) !important;
+}
+
+.icon-nav:hover {
+    color: var(--main-color) !important;
+    transition: 0.4s !important;
+}
+
+/**
+ * btn close
+ */
+.btn-close-aside {
+    color: var(--text-color);
+    transition: 0.4s;
+}
+
+.btn-close-aside:hover,
+.btn-close-aside:active {
+    color: var(--main-color) !important;
+    transition: 0.4s !important;
+}
+
+/**
+ * btn social
+ */
+.btn-social {
+    padding: 0 !important;
+    color: var(--text-color);
+    border: none !important;
+    transition: 0.4s !important;
+}
+
+.btn-social:hover {
+    color: var(--main-color);
+    transform: translateY(-5px);
+    transition: 0.4s !important;
+}
+
+/**
+ * btn arrow down
+ */
+.btn-arrow {
+    border: 2px solid transparent;
+    background-color: var(--main-color) !important;
+    color: var(--bg-color) !important;
+    min-width: 60px;
+    min-height: 60px;
+    max-width: 60px;
+    max-height: 60px;
+    transition: 0.4s;
+    animation: btnUp;
+}
+
+.btn-arrow:hover {
+    border: 2px solid var(--main-color);
+    background-color: transparent !important;
+    color: var(--main-color) !important;
+    transition: 0.4s;
+}
+
+/**
+ * card
+ */
+.card {
+    background: linear-gradient(rgba(255, 168, 106, 0.35) 0%, rgba(3, 3, 3, 0.77) 64%, rgba(3, 3, 3) 100%);
+    border: none;
+    padding: 40px 40px 30px;
+}
+
+.card img { 
+    max-width: 260px; 
+    transition: 0.4s;
+}
+
+.card:hover img { 
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.card .card-body .title-body {
+    font-family: var(--font-family-primary);
+    color: var(--text-color) !important;
+}
+
+.card .card-body .text-card {
+    color: var(--text-color) !important;
+}
+
+.icon-shop {
+    border: none !important;
+    background-color: var(--main-color) !important;
+    color: var(--bg-color) !important;
+    border-radius: 0 8px 0 0;
+}
+
+/**
+ * btn contact
+ */
+.btn-contact {
+    border: 2px solid var(--second-color);
+    background-color: transparent;
+    color: var(--main-color);
+    width: 100%;
+    padding: 10px 22px;
+    transition: 0.4s;
+}
+.btn-contact:hover,
+.btn-contact:active {
+    border: 2px solid var(--main-color) !important;
+    background-color: var(--main-color) !important;
+    color: var(--bg-color) !important;
+    transition: 0.4s !important;
+}
+
+/* ------------------------------------------------------------- *\
+ * NAVBAR
+\* ------------------------------------------------------------- */
+
+.navbar {
+    height: 100px;
+    transition: 0.6s;
+}
+
+.navbar.active {
+    background-color: var(--bg-color);
+    height: 70px;
+    transition: 0.6s;
+}
+
+.nav-link:hover {
+    color: var(--main-color);
+    transition: 0.4s;
+}
+
+/* ------------------------------------------------------------- *\
+ * ASIDE
+\* ------------------------------------------------------------- */
+
+.aside {
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 70px 50px;
+}
+
+.aside-link:hover {
+    color: var(--main-color);
+    transition: 0.4s;
+}
+
+/* ------------------------------------------------------------- *\
+ * HERO
+\* ------------------------------------------------------------- */
+
+.hero {
+    width: 100%;
+    height: 100vh;
+}
+
+.text-top {
+    font-family: var(--font-family-primary);
+    color: var(--main-color);
+}
+
+.text-title {
+    font-family: var(--font-family-primary);
+    margin-bottom: 25px;
+}
+
+/* ------------------------------------------------------------- *\
+ * EXHIBITIONS
+\* ------------------------------------------------------------- */
+
+.exhibitions-body .title-exhibitions {
+    color: var(--text-color);
+    transition: 0.4s;
+}
+
+.exhibitions-body .title-exhibitions:hover {
+    color: var(--main-color);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.exhibitions-body .text-exhibitions { color: var(--main-color); }
+
+.border-exhibitions-top {
+    border-top: 1px solid var(--main-color);
+    padding-block: 20px 0;
+}
+
+/* ------------------------------------------------------------- *\
+ * FOOTER
+\* ------------------------------------------------------------- */
+
+.footer { padding: 90px 0 16px; }
+
+/* ------------------------------------------------------------- *\
+ * MEADIA QUERY
+\* ------------------------------------------------------------- */
+
+/**
+ * FIT SIZE: 768PX
+ */
+@media screen and (min-width: 768px) {
+    /* STYLE GUIDE */
+    :root {
+        --fs-display-large: 3.6rem;
+        --fs-display-medium: 3.6rem;
+        --fs-display-small: 3rem;
+        --fs-headline-small: 2.2rem;
+    }
+}
+
+/**
+ * FIT SIZE: 992px
+ */
+@media screen and (min-width: 992px) {
+    /* STYLE GUIDE */
+    :root {
+        --header-height: 72px;
+        --mobile-nav-height: 0;
+        --fs-headline-small: 2.3rem;
+    }
+}
+
+/**
+ * FIT SIZE: 1440px
+ */
+@media screen and (min-width: 1440px) {
+    /* STYLE GUIDE */
+    :root {
+        --fs-display-large: 5.7rem;
+        --fs-display-medium: 4.5rem;
+        --fs-display-small: 3.6rem;
+    }
+
+    /* TYPOGRAPHY */
+    .display-large { line-height: 8rem; }
+
+    .display-medium { line-height: 6rem; }
+
+    .display-small { line-height: 5rem; }
+}
